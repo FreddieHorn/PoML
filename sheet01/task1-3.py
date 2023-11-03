@@ -4,9 +4,9 @@ import imageio.v3 as iio
 import numpy.linalg as la
 import scipy.ndimage as img
 
+
 # from task 1.1
 def optimal_w_with_lstsq(X, y):
-
     optimal_w, _, _, _ = la.lstsq(X.T, y, rcond=None)
     return optimal_w
 
